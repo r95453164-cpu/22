@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>22:22 — ты красивая</title>
+<meta name="description" content="Красивая дата для красивой девочки. 22 ноября, 22:22.">
+<meta name="theme-color" content="#f7ece8">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="22 ноября · 22:22">
+<meta property="og:description" content="Красивая дата. Красивая ты. Совпадение? Мы так не думаем.">
+<meta property="og:image" content="assets/photo-roses.jpg">
+
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23f7ece8'/%3E%3Cpath d='M16 25s-8-4.7-8-10.2A4.6 4.6 0 0 1 16 11.6 4.6 4.6 0 0 1 24 14.8C24 20.3 16 25 16 25Z' fill='%23cf8090'/%3E%3C/svg%3E">
+
+<link rel="preload" href="assets/fonts/cormorant-600-cyr.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/cormorant-400i-cyr.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/jost-300-cyr.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<canvas id="petals" aria-hidden="true"></canvas>
+<div class="grain" aria-hidden="true"></div>
+
+<!-- ───────────────────────── обложка ───────────────────────── -->
+<header class="hero" id="top">
+  <picture class="hero__bg">
+    <source media="(max-width: 700px)" srcset="assets/bg-flowers-portrait.jpg">
+    <img src="assets/bg-flowers.jpg" alt="Бледно-розовые розы на стене" width="1376" height="768">
+  </picture>
+  <div class="hero__veil" aria-hidden="true"></div>
+
+  <div class="hero__inner">
+    <p class="eyebrow"><span></span>22 ноября · 22:22<span></span></p>
+
+    <h1 class="hero__time" id="heroTime" tabindex="0" role="button" aria-label="22:22">
+      <span>22</span><span class="colon">:</span><span>22</span>
+    </h1>
+
+    <p class="hero__lead">
+      Красивая дата. Красивая ты.<br>
+      Совпадение? Мы так не думаем.
+    </p>
+
+    <p class="hero__secret" id="secretNote" aria-live="polite">
+      (нашёл секрет. ты правда красивая. вот и всё, что я хотел сказать.)
+    </p>
+
+    <a class="scroll" href="#reasons">
+      <span>листай дальше, там хорошо</span>
+      <i aria-hidden="true"></i>
+    </a>
+  </div>
+
+  <button class="sound" id="soundBtn" type="button" aria-pressed="false">
+    <span class="sound__icon" aria-hidden="true">♪</span>
+    <span class="sound__label">перем-перем</span>
+  </button>
+</header>
+
+<main>
+
+  <!-- ───────────────────── пять причин ───────────────────── -->
+  <section class="section reasons" id="reasons">
+    <div class="wrap">
+      <p class="eyebrow eyebrow--dark reveal"><span></span>небольшой список<span></span></p>
+      <h2 class="h2 reveal">Пять причин,<br><em>почему ты красивая</em></h2>
+
+      <div class="cards">
+        <article class="card reveal" style="--d:0ms">
+          <span class="card__num">01</span>
+          <h3>Потому что ты красивая</h3>
+          <p>Не «симпатичная», не «ничего так» — красивая. Просто прими это и не спорь, спорить бесполезно, я упрямый.</p>
+        </article>
+
+        <article class="card reveal" style="--d:80ms">
+          <span class="card__num">02</span>
+          <h3>Потому что ты смеёшься над собой</h3>
+          <p>И над моими шутками. Второе, если честно, сложнее. Спасибо, что иногда делаешь вид, что смешно.</p>
+        </article>
+
+        <article class="card reveal" style="--d:160ms">
+          <span class="card__num">03</span>
+          <h3>Потому что с тобой можно молчать</h3>
+          <p>И это не давит. Не надо заполнять паузы, не надо быть удобной. Просто рядом — и уже хорошо.</p>
+        </article>
+
+        <article class="card reveal" style="--d:240ms">
+          <span class="card__num">04</span>
+          <h3>Потому что с тобой перем-перем</h3>
+          <p>Объяснить не могу. Но когда ты появляешься, в голове включается что-то милое, немного нелепое и очень тёплое.</p>
+        </article>
+
+        <article class="card reveal card--wide" style="--d:320ms">
+          <span class="card__num">05</span>
+          <h3>Потому что ты есть</h3>
+          <p>Самая простая и самая честная причина из всех. Всё остальное — подробности.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ───────────────────────── галерея ───────────────────────── -->
+  <section class="section gallery">
+    <div class="wrap">
+      <p class="eyebrow eyebrow--dark reveal"><span></span>вместо слов<span></span></p>
+      <h2 class="h2 reveal">Немного <em>цветов</em></h2>
+
+      <div class="frames">
+        <figure class="frame frame--a reveal" style="--d:0ms">
+          <img src="assets/photo-roses.jpg" alt="Букет бледно-розовых роз в стеклянной вазе на подоконнике" width="928" height="1152" loading="lazy">
+          <figcaption>это тебе. в смысле — розы. хотя...</figcaption>
+        </figure>
+
+        <figure class="frame frame--b reveal" style="--d:120ms">
+          <img src="assets/photo-sky.jpg" alt="Розовое закатное небо в лёгких облаках" width="928" height="1152" loading="lazy">
+          <figcaption>небо в 22:22. примерно такого же цвета, как ты, когда смущаешься</figcaption>
+        </figure>
+
+        <figure class="frame frame--c reveal" style="--d:240ms">
+          <img src="assets/texture-roses.jpg" alt="Поле из множества розовых роз" width="1080" height="2040" loading="lazy">
+          <figcaption>и лепестки на память</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ───────────────────────── цитата ───────────────────────── -->
+  <section class="quote">
+    <img class="quote__bg" src="assets/texture-paper.jpg" alt="" aria-hidden="true" loading="lazy">
+    <blockquote class="reveal">
+      <p>«Красивая — это не про внешность.<br>Хотя и про неё тоже. Ты — про всё сразу.»</p>
+      <cite>мне, 22:22</cite>
+    </blockquote>
+  </section>
+
+  <!-- ───────────────────────── часы ───────────────────────── -->
+  <section class="section clock" id="clock">
+    <div class="wrap wrap--narrow">
+      <p class="eyebrow eyebrow--dark reveal"><span></span>ровно сейчас<span></span></p>
+
+      <div class="clock__card reveal">
+        <p class="clock__label">у тебя на часах</p>
+        <p class="clock__time" id="nowTime">--:--:--</p>
+        <p class="clock__date" id="nowDate">—</p>
+
+        <div class="clock__rule" aria-hidden="true"><span>✿</span></div>
+
+        <p class="clock__count" id="countdown">считаю до следующего 22:22…</p>
+        <p class="clock__hint" id="countdownHint">&nbsp;</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ───────────────────────── письмо ───────────────────────── -->
+  <section class="section letter-section">
+    <div class="wrap wrap--narrow">
+      <h2 class="h2 reveal">Всё, что <em>не сказал вслух</em></h2>
+
+      <article class="letter reveal">
+        <p>Привет.</p>
+        <p>Если ты это читаешь, значит я всё-таки собрал сайт, а не отправил смайлик. Для меня это почти подвиг — зацени.</p>
+        <p>Красивая дата — это просто повод. Сказать хочу другое: <strong>ты красивая</strong>. Не только сегодня, не только в 22:22 и не только когда при параде. Утром с растрёпанной головой, в час ночи с глупыми вопросами, в те моменты, когда тебе кажется, что всё не так, — красивая.</p>
+        <p>И да, перем-перем. Тут без комментариев, ты и так всё понимаешь.</p>
+        <p>Спасибо, что ты есть. Обнимаю крепко.</p>
+        <p class="letter__sign">p.s. внизу есть сердечко. нажми — мне будет приятно.</p>
+        <p class="letter__mark">перем <em>перем</em> ✿</p>
+      </article>
+    </div>
+  </section>
+
+</main>
+
+<!-- ───────────────────────── подвал ───────────────────────── -->
+<footer class="footer">
+  <div class="wrap wrap--narrow">
+    <p class="footer__line">22 · 11 · 22:22</p>
+
+    <button class="heart" id="heartBtn" type="button" aria-label="Отправить сердечко">
+      <span class="heart__shape" aria-hidden="true">❤</span>
+      <span class="heart__count" id="heartCount">0</span>
+    </button>
+
+    <p class="footer__caption" id="heartCaption">сердечек на сегодня: ноль. это легко исправить</p>
+    <p class="footer__small">сделано вручную, с розами и лишними запятыми</p>
+  </div>
+  <div class="hearts" id="hearts" aria-hidden="true"></div>
+</footer>
+
+<script src="js/app.js"></script>
+</body>
+</html>
